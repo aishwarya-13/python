@@ -67,7 +67,7 @@ print(word[-2]) #g
 print(word[word.index('cali'): word.index('and')]) #california
 
 #Reverse a string
-#print('aishwarya vhatkar'[::-1]) #raktahv ayrawhsia
+print('aishwarya vhatkar'[::-1]) #raktahv ayrawhsia
 
 
 

@@ -1,7 +1,19 @@
+import math
+
+print(round(2.2))
+print(math.ceil(2.2))
+print(math.pi)
+print(math.sin(math.pi))
+print(math.hypot(3,4))
+print(int(math.pow(2,3)))
+print(math.log(math.e))
+print(math.log10(1000))
+
+"""
 # BODMAS property
 print(2 * 5 - 1); # 9
 print(2 * (5 - 1)); # 8
-"""
+
 print(100 + 10);# 100
 print(100 - 10); # 90
 print(100 / 10); # 10.0

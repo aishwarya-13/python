@@ -1,3 +1,60 @@
+# String methods
+
+# Count the number of chars or word in the string
+print('hello'.count('e')); # 1
+print('hello'.count('a')); # 0
+print('happy birthday'.count('day')) # 1
+
+# Upper and lower case
+a = 'Aishwarya'
+b = 'aishwarya'
+print(a.lower()) # aishwarya
+print(b.upper()) # AISHWARYA
+#Strings are immutable. You cannot change them unless you overwrite them
+print(a)
+print(b)
+
+#Turn only  the first letter to uppercase of the string
+print('aishwarya'.capitalize()) # Aishwarya
+
+#Turn first letter of every word to uppercase
+print('aishwarya vhatkar'.title()) # Aishwarya Vhatkar
+
+# Check for uppercase / lowercase
+print('aishwarya vhatkar'.isupper()) # False
+print('Aishwarya'.islower()) # False
+
+# Is everything in the string letters
+print('aishwarya'.isalpha()) # True
+print('aishwarya vhatkar'.isalpha()) # False
+
+# Is string alphanumeric
+print('aish123'.isalnum())
+
+# Is all chars numbers
+print('1234'.isdigit()) #True
+
+# Search
+print('aishwarya vhatkar'.index('a')) #0
+print('aishwarya vhatkar'.index('ai')) #0
+#print('aishwarya vhatkar'.index('zas')) #ValueError: substring not found
+print('aishwarya vhatkar'.find('azz')) #-1
+
+#Strip
+print('00000aishwarya vhatkar0000'.strip('0')) #aishwarya vhatkar
+print('00000aishwarya vhatkar0000'.lstrip('0')) #aishwarya vhatkar0000
+print('00000aishwarya vhatkar0000'.rstrip('0')) #00000aishwarya vhatkar
+#trims spaces at start and end
+print('  aishwarya   '.strip()) #aishwarya
+
+
+
+
+
+
+""""
+#===========================
+
 # Asking the user for input
 # Ask user for name
 name = input("What is your name?")
@@ -19,7 +76,6 @@ love = input("What do you love doing?")
 output = "Your name is {} and you are {} years old. You live in {} and you love {}"
 output = output.format(name, age, city, love)
 print(output)
-""""
 #Type coercion not done in Python
 d = 'nice'
 e = 1
@@ -30,6 +86,8 @@ e = 1
 print("{}-{}".format(d,e))
 print("{1}-{0}".format(d,e)) #placing e first and d second
 
+#===========================
+
 #String Concatenation
 a = 'Hello'
 b = 'World!'
@@ -38,9 +96,8 @@ c = a + ' ' + b
 #printing a string multiple times
 #print(a * 4) # HelloHelloHello
 
-"""
+#===========================
 
-"""
 name = "Aishwarya"
 #print(name)
 #print(type(name)) # <class 'str'>

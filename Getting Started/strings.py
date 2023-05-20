@@ -123,6 +123,7 @@ name = "Aishwarya"
 #print(name)
 #print(type(name)) # <class 'str'>
 
+#Fix broken string
 message = 'Ojas said to me "I will see you later"'
 
 # Include the string in 3 double quotes OR 3 single quotes

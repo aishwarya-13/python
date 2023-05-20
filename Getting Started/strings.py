@@ -47,6 +47,27 @@ print('00000aishwarya vhatkar0000'.rstrip('0')) #00000aishwarya vhatkar
 #trims spaces at start and end
 print('  aishwarya   '.strip()) #aishwarya
 
+#Slice
+word = 'supercaliforniaandduperchicago'
+print(word[0]) #s
+print(word[3]) #e
+#Slice variable[start:end:step]
+print(word[0:5:1]) #super
+print(word[0:5:2]) #spr
+print(word[5:9:1]) #cali
+#slice from start to end - specify only the start
+print(word[5:]) #californiaandduperchicago
+#slice from start to end in steps of 2 - not specifying the end
+print(word[5::2]) #clfriadueciao
+#Specify only the end index - it slices from start to end
+print(word[:7])
+#Count from the end
+print(word[-2]) #g
+#using indexes dynamically
+print(word[word.index('cali'): word.index('and')]) #california
+
+#Reverse a string
+#print('aishwarya vhatkar'[::-1]) #raktahv ayrawhsia
 
 
 

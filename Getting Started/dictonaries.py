@@ -1,6 +1,7 @@
 """
 Similar to map/objects in JS
 There is no order
+CREATE a dictionary
 """
 students = {
     "Aish":30,
@@ -13,19 +14,19 @@ students = {
 print(students["Aish"]) #30
 
 """
-Adding an element in dictionary
+ADD an element in dictionary
 """
 students["Fred"] = 50
 print(students["Fred"]) #50
 
 """
-Delete an element in dictionary
+DELETE an element in dictionary
 """
 del students["Fred"]
 print(students) #{'Aish': 30, 'Rohit': 32, 'Ojas': 29}
 
 """
-Keys of the dictionary
+KEYS of the dictionary
 The keys are not iterable so convert it to list
 """
 print(students.keys()) #dict_keys(['Aish', 'Rohit', 'Ojas'])
@@ -34,7 +35,7 @@ keys_list = list(students.keys())
 print(keys_list[0]) #Aish
 
 """
-Values of the dictionary
+VALUES of the dictionary
 """
 values_list = list(students.values())
 print(values_list) #[30, 32, 29]

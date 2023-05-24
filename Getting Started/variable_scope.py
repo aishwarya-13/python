@@ -1,10 +1,12 @@
 """
 Two types of scope in python
 1] Global
-2] Local scope: functions create local scopes inside them
+2] Local scope: 
+->functions create local scopes inside them. Loops and if statements do not create local scope
 ->Local variable takes priority over global variables
 ->Local variables are destroyed after function is done executing
-->Python does not let you change the value of global variable. So what it does is, it creates a local variable
+->Python does not let you change the value of global variable (cannot overwrite). 
+So what it does is, it creates a local variable
 """
 
 """
@@ -56,3 +58,20 @@ def fun5():
 print('Global variable::::', val)
 fun4()
 fun5()
+
+"""
+Lists in global scope
+Value of global list items can be changed by functions
+Same behavior is for dictionaries
+"""
+mylist = [1,2,3,4]
+
+def fun6():
+    #mylist = [102801,1281982,9009]
+    mylist[0] = 100 # Changing value of first element in list
+    print('Changed first ele of list:::', mylist)
+    
+    
+
+print('Original list:::: ', mylist)
+fun6()

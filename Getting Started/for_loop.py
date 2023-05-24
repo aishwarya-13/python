@@ -33,3 +33,17 @@ for char in str:
 
 print('There are {} vowels in the string'.format(vowels))
 print('There are {} consonants in the string'.format(consonants))
+
+"""
+Iterating a dictionary
+Print the names who have letter a in them
+"""
+employees = {
+    "male":["Rohit", "Ryan", "Ojas", "Priyansh"],
+    "female":["Aishwarya", "Shreya", "Kshiti", "Sana", "Moire"]
+}
+for key in employees:
+    for emp in employees[key]:
+        if 'a' in emp:
+            print(emp)
+

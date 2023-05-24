@@ -7,3 +7,7 @@ elif num2 > num1:
     print('num2 is greater')
 else:
     print('both are equal')
+
+"""
+pass in python is equivalent to continue in JS
+"""
